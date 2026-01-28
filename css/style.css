@@ -347,3 +347,108 @@ h2.section-heading {
     animation-range: entry 30% cover 60%;
     animation-delay: calc(var(--i) * 100ms);
 }
+
+/* Services Section */
+.services {
+    padding: 80px 0;
+}
+
+.services .services-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+    background-color: var(--borderColor);
+    border: 1px solid var(--borderColor);
+    gap: 1px;
+}
+
+.service-item {
+    position: relative;
+    min-height: 320px;
+    overflow: hidden;
+    background-color: var(--blackColor);
+}
+
+.service-item.span-2 {
+    grid-column: span 2;
+}
+
+.service-item a::before {
+    content: "";
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid var(--whiteColor);
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.service-item a:hover::before {
+    background-color: var(--whiteColor);
+}
+
+
+.service-item video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.service-item:hover video {
+    opacity: 1;
+}
+
+.service-item .service-item-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(0deg, rgba(var(--rgbBlack), 1) 0%, rgba(var(--rgbBlack), 0) 100%);
+    transform: translateY(35%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.service-item:hover a .service-item-content {
+    transform: translateY(0);
+}
+
+.service-item .service-item-content-header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.service-item .service-item-content-header img {
+    width: 30px;
+    height: 30px;
+    transform: rotate(-45deg);
+}
+
+.service-item h3 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.service-item p {
+    font-weight: 300;
+    max-width: 450px;
+}
