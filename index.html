@@ -2,10 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"
-    <title>Create Agency - 2026</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Creative Agency - 2026</title>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="main-navigation">
+                <img src="images/logo.svg" alt="Logo" />
 
+                <nav>
+                    <a href="#">Work</a>
+                    <a href="#">Services</a>
+                    <a href="#">Culture</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+
+                <a href="#" class="secondary-cta-button">
+                    <span>Start a project</span>
+                    <div class="button-arrow-wrapper">
+                        <img src="images/arrow.svg" alt="Arrow" />
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="video-wrapper">
+            <video autoplay muted loop playsinline>
+                <source src="videos/hero-video.webm" type="video/webm">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+
+        <svg width="100%" height="100%" class="hero-lines">
+            <line x1="50%" y1="0" x2="50%" y2="100%" stroke="rgba(255, 255, 255, 0.80)" stroke-width="2"></line>
+            <line x1="35%" y1="0" x2="35%" y2="100%" stroke="rgba(255, 255, 255, 0.80)" stroke-width="2"></line>
+            <line x1="65%" y1="0" x2="65%" y2="100%" stroke="rgba(255, 255, 255, 0.80)" stroke-width="2"></line>
+            <line x1="20%" y1="0" x2="20%" y2="100%" stroke="rgba(255, 255, 255, 0.80)" stroke-width="2"></line>
+            <line x1="80%" y1="0" x2="80%" y2="100%" stroke="rgba(255, 255, 255, 0.80)" stroke-width="2"></line>
+            <line x1="5%" y1="0" x2="5%" y2="100%" stroke="rgba(255, 255, 255, 0.80)" stroke-width="2"></line>
+            <line x1="95%" y1="0" x2="95%" y2="100%" stroke="rgba(255, 255, 255, 0.80)" stroke-width="2"></line>
+        </svg>
+
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-content-wrapper">
+                    <h2>UX/UI & Dev</h2>
+                    <h1>Creative Agency</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, unchanged.</p>
+                    <a href="#" class="cta-button">
+                        <div class="black-btn-bg">
+                            <span>Start a project</span>
+                            <div class="button-arrow-wrapper">
+                                <img src="images/arrow.svg" alt="Arrow" />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
