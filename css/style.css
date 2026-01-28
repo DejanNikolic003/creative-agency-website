@@ -452,3 +452,85 @@ h2.section-heading {
     font-weight: 300;
     max-width: 450px;
 }
+
+/* Blog Section */
+.blog {
+    padding: 80px 0;
+}
+
+.blog-header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.blog-items-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.blog-items-wrapper .blog-item:hover a {
+    display: block;
+    animation: blur-effect 0.8s both;
+}
+
+.blog-items-wrapper .blog-item img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.blog-items-wrapper .blog-item .blog-item-content  {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.blog-items-wrapper .blog-item .blog-item-content h3 {
+    font-size: 1.875rem;
+    font-weight: 400;
+}
+
+.blog-items-wrapper .blog-item .blog-item-content p {
+    font-weight: 300;
+}
+
+.blog-items-wrapper .blog-item .blog-item-content .author-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.125rem;
+}
+
+.blog-items-wrapper .blog-item .blog-item-content .author-wrapper .author-name-image {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.blog-items-wrapper .blog-item .blog-item-content .author-wrapper .author-name-image img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.blog-items-wrapper .blog-item .blog-item-content .author-wrapper  .published-date-read-time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dot-separator {
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--whiteColor);
+}
+
+/* Big Call To Action Section */
+.big-call-to-action video {
+    width: 100%;
+}
